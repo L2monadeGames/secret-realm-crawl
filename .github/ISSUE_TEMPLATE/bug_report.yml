@@ -1,0 +1,47 @@
+name: 버그 제보 / Bug report
+description: 재현 가능한 게임 오류를 알려 주세요 / Report a reproducible game problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        이슈는 공개됩니다. 개인정보·비밀번호·토큰·전체 저장 데이터·관리 화면을 첨부하지 마세요.
+        Issues are public. Do not attach personal information, passwords, tokens, complete save data, or administration screens.
+  - type: input
+    id: version
+    attributes:
+      label: 게임 버전 / Game version
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 브라우저와 운영체제 / Browser and operating system
+      placeholder: "예 / e.g. Chrome, Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 순서 / Steps to reproduce
+      description: 오류가 나타나기까지 선택한 행동을 순서대로 적어 주세요 / List the actions that lead to the problem
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 결과 / Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 결과 / Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 화면 또는 추가 설명 (선택) / Screenshot or extra context (optional)
+      description: 개인정보를 가린 실제 게임 화면만 첨부해 주세요 / Attach only actual game screens with personal information hidden

@@ -1,0 +1,27 @@
+name: 개선 제안 / Suggestion
+description: 게임의 불편한 점과 개선 아이디어를 알려 주세요 / Suggest an improvement
+title: "[Suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제안은 공개됩니다. 개인정보·비밀번호·토큰 등 민감한 정보를 포함하지 마세요.
+        Suggestions are public. Do not include personal information, passwords, tokens, or other sensitive data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하려는 문제 / Problem to solve
+      description: 어떤 상황에서 불편했는지 설명해 주세요 / Describe the situation and what could be better
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 제안 내용 / Suggested change
+      description: 원하는 변화와 도움이 되는 이유를 적어 주세요 / Describe your proposed change and why it would help
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 추가 설명 (선택) / Extra context (optional)
